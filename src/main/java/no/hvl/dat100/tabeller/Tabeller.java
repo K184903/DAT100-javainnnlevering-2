@@ -1,6 +1,18 @@
 package no.hvl.dat100.tabeller;
 
 public class Tabeller {
+	
+	public static void main( String[] args) {
+		int[]tabell = {1,2,3,4};
+		
+		int[]reversert = reverser(tabell);
+		
+		skrivUt(reversert);
+	
+	
+
+		
+		}
 
 	// a)
 	public static void skrivUt(int[] tabell) {
@@ -47,38 +59,74 @@ public class Tabeller {
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden finnesTall ikke implementert");
-
+		int i=0;
+		while(i<tabell.length) {
+			if(tall==tabell[i] ){
+				return true;
+			}i++;
+		}return false;
 	}
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden posisjonTall ikke implementert");
+		int i=0;
+		while(i<tabell.length) {
+			if(tall==tabell[i] ){
+				return i;
+			}i++; 
+		}return -1;
 	}
 
 	// f)
 	public static int[] reverser(int[] tabell) {
+		
+		int[]reversertTabell = new int[tabell.length];
+		
+				
+		for(int i = 0; i < tabell.length; i++) {
+			reversertTabell[i] = tabell[tabell.length-1-i];
+		
+		}
+		return reversertTabell;
+		
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden reverser ikke implementert");
 	}
 
 	// g)
 	public static boolean erSortert(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden erSortert ikke implementert");
+		int j = 0;
+		boolean sortert = true;
+		
+		while(sortert && j< tabell.length-1) {
+			if(tabell[j]>tabell[j+1]) {
+				sortert = false;
+				
+			}
+			j++;
+			
+		}
+		return sortert;
 	}
 
+	
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden settSammen ikke implementert");
-
+		
+		
+		int[]tab3 = new int[tabell1.length + tabell2.length];
+		for(int i = 0; i< tabell1.length;i++) {
+			tab3[i] = tabell1[i];
+		}
+		for(int j =0; j< tabell2.length; j++) {
+			tab3[tabell1.length + j] = tabell2[j];
+			
+		}
+		return tab3;
 	}
-}
+	}
+
+	
+	
+
