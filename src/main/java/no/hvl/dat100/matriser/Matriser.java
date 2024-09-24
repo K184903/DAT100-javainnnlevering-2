@@ -1,13 +1,23 @@
 package no.hvl.dat100.matriser;
 
 public class Matriser {
-
+	public static void main(String[] args) {
+		int[][] tal = {{1,2,3,4}, {1,3,5,6}, {2,4,5,6}};
+		skrivUt(tal);
+		
+	}
 	// a)
 	public static void skrivUt(int[][] matrise) {
-		
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
+
+		for(int[] i: matrise) {
+			System.out.print("[");
+			for(int j: i) {
+			System.out.print(j+"\t");
+			
+		}System.out.println("]");
+		}
 	}
+		
 
 	// b)
 	public static String tilStreng(int[][] matrise) {
@@ -27,6 +37,12 @@ public class Matriser {
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
+		for(int[]i: a) {
+			for(int[]j: b) {
+				
+				
+		}
+		}
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden erLik ikke implementert");
