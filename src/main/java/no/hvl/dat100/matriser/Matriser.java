@@ -31,7 +31,6 @@ public class Matriser {
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
 		int rader = matrise.length;
-<<<<<<< Updated upstream
 		int kolonne = matrise[0].length;
 		
 		int[][]nyMatrise = new int[rader][kolonne];
@@ -44,20 +43,6 @@ public class Matriser {
 			}
 		}
 	return nyMatrise;
-=======
-		int kolonner = matrise[0].length;
-		
-		int[][]nyMatrise = new int[rader][kolonner];
-		
-		for(int i = 0; i<rader; i++) {
-		
-		for(int j = 0; j<kolonner;j++) {
-			
-			nyMatrise[i][j]= matrise[i][j]*tall;
-				}
-		}
-		return nyMatrise;
->>>>>>> Stashed changes
 	}
 
 	// d)
