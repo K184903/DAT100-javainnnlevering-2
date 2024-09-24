@@ -47,6 +47,8 @@ public class Matriser {
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
+		
+		
 		for(int[]i: a) {
 			for(int[]j: b) {
 				
@@ -54,19 +56,32 @@ public class Matriser {
 		}
 		}
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden erLik ikke implementert");
 		
 	}
 	
 	// e)
 	public static int[][] speile(int[][] matrise) {
-
-		// TODO
-
-		throw new UnsupportedOperationException("Metoden speile ikke implementert");
-	
+		int n = matrise.length;
+	    int[][] nyMatrise = new int[n][n];
+		
+		for (int i=0; i < n; i++) {
+			for (int j=0; j < n; j++) {
+				nyMatrise[i][j] = matrise[i][j];
+		       
+		      }
+		}
+		
+	    for (int i = 0; i < n; i++) {
+			for (int j = 0; j < i; j++) {
+			    int temp = nyMatrise[i][j];
+			      nyMatrise[i][j] = nyMatrise[j][i];
+			      nyMatrise[j][i] = temp;
+			        }
+			    }
+	    return nyMatrise;
 	}
+	
+	
 
 	// f)
 	public static int[][] multipliser(int[][] a, int[][] b) {
