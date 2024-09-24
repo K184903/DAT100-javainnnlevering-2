@@ -1,58 +1,50 @@
 package no.hvl.dat100.matriser;
 
 public class Matriser {
-	public static void main(String[] args) {
-		int[][] tal = {{1,2,3,4}, {1,3,5,6}, {2,4,5,6}};
-		skrivUt(tal);
-		
-	}
+    public static void main(String[] args) {
+        int[][] matrise = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        } ;
+        
+        System.out.println(tilStreng(matrise));
+    }
+
+	
+
 	// a)
 	public static void skrivUt(int[][] matrise) {
-
-		for(int[] i: matrise) {
-			System.out.print("[");
-			for(int j: i) {
-			System.out.print(j+"\t");
-			
-		}System.out.println("]");
-		}
-	}
 		
+		// TODO
+		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
+	}
 
-	// b)
+	//b)
 	public static String tilStreng(int[][] matrise) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
+		StringBuilder sb = new StringBuilder ();
 		
+		for ( int [] element : matrise) {
+			for (int i : element ) {
+				sb.append(i).append(" "); 
+			}
+			sb.setLength(sb.length() - 1);
+			sb.append("\n"); 
+		}
+		return sb.toString(); 
 	}
-
+	
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
-		int rader = matrise.length;
-		int kolonne = matrise[0].length;
-		
-		int[][]nyMatrise = new int[rader][kolonne];
-		
-		for(int i = 0; i < rader; i++) {
-			for(int j = 0; j < kolonne; j++) {
-				
-				nyMatrise[i][j]=matrise[i][j]*tall;
-						
-			}
-		}
-	return nyMatrise;
+		// TODO
+		throw new UnsupportedOperationException("Metoden skaler ikke implementert");
+	
 	}
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
-		for(int[]i: a) {
-			for(int[]j: b) {
-				
-				
-		}
-		}
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden erLik ikke implementert");
