@@ -6,8 +6,7 @@ public class Tabeller {
 		int[]tabell = {1,2,3,4};
 		
 		int[]reversert = reverser(tabell);
-		int[] ny=settSammen(tabell, reversert);
-		skrivUt(ny);
+		
 		skrivUt(reversert);
 	
 	
