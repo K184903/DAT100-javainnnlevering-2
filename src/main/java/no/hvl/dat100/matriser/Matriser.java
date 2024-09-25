@@ -50,31 +50,13 @@ public class Matriser {
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
-		
-		
-		for(int[]i: a) {
-			for(int[]j: b) {
-					
-
-		String str_a=" ";
-		for(int[]element: a) {
-			for(int i: element) {
-				str_a+=i;							
-			}
-
-		}
-		String str_b=" ";
-		for(int[] element2: b) {
-			for(int j: element2) {
-				str_b+=j;							
-		}}if(str_a==str_b) {
-			return true;
-		}else{
-			return false; 
-		}
-		
-
+	
+	 return true;
 	}
+	 
+		
+
+	
 
 
 
