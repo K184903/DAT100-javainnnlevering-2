@@ -9,10 +9,15 @@ public class Matriser {
         } ;
         
         System.out.println(tilStreng(matrise));
-    }
+  
+ {
+		int[][] tal = {{1,2,3,4}, {1,3,5,6}, {2,4,5,6}};
+		int[][] tal2= {{1,2,3,4}, {1,3,5,6}, {2,4,5,6}};
+		skrivUt(tal);
 
-	
-
+ }
+		
+	}
 	// a)
 	public static void skrivUt(int[][] matrise) {
 		
@@ -45,11 +50,28 @@ public class Matriser {
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden erLik ikke implementert");
 		
+		String str_a=" ";
+		for(int[]element: a) {
+			for(int i: element) {
+				str_a+=i;							
+			}
+		}
+		String str_b=" ";
+		for(int[] element2: b) {
+			for(int j: element2) {
+				str_b+=j;							
+		}}if(str_a==str_b) {
+			return true;
+		}else{
+			return false; 
+		}
+			
+
 	}
+
+
+
 	
 	// e)
 	public static int[][] speile(int[][] matrise) {
