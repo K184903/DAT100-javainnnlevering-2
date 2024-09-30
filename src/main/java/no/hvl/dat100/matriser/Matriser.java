@@ -40,6 +40,22 @@ public class Matriser {
 		return sb.toString(); 
 	}
 	
+    public static String tilStreng(int[][] matrise) {
+        String result = "";
+        
+        for (int i = 0; i < matrise.length; i++) {
+            for (int j = 0; j < matrise[i].length; j++) {
+                result += matrise[i][j];
+                if (j < matrise[i].length - 1) {
+                    result += " ";
+                }
+            }
+            result += " \n";
+        }
+        
+        return result;
+    }
+    
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
@@ -89,4 +105,4 @@ public class Matriser {
 		throw new UnsupportedOperationException("Metoden multipliser ikke implementert");
 	
 	}
-}
+	}
