@@ -8,13 +8,23 @@ public class Matriser {
             {7, 8, 9}
         } ;
         
+        int[][] nym= {
+        		{1, 2, 3},
+                {4, 5, 6},
+                {7, 5, 9}
+        };
         System.out.println(tilStreng(matrise));
+        System.out.print(erLik(matrise, nym));
     }
 	// a)
 	public static void skrivUt(int[][] matrise) {
-		
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
+		for (int[] i: matrise) {
+			System.out.print("[");
+			for(int j:i) {
+				System.out.print(j+" ");
+			}System.out.print("]");
+			
+		}
 	}
 
 	//b)
@@ -50,11 +60,22 @@ public class Matriser {
 	return nyMatrise;
 	
 	}
-
+	
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
-	 return true;
+		
+		if (a.length!=b.length) {
+			return false;
+		}
+        for (int i = 0; i < a.length; i++) {
+        	for (int j=0;j<a[i].length; j++) {
+        		if (a[i][j]!=b[i][j]) {
+        			return false; 
+        		}
+        		
+        	}
+        }return true;
 	}
 	
 
