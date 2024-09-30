@@ -9,15 +9,7 @@ public class Matriser {
         } ;
         
         System.out.println(tilStreng(matrise));
-  
- {
-		int[][] tal = {{1,2,3,4}, {1,3,5,6}, {2,4,5,6}};
-		int[][] tal2= {{1,2,3,4}, {1,3,5,6}, {2,4,5,6}};
-		skrivUt(tal);
-
- }
-		
-	}
+    }
 	// a)
 	public static void skrivUt(int[][] matrise) {
 		
@@ -26,20 +18,6 @@ public class Matriser {
 	}
 
 	//b)
-	public static String tilStreng(int[][] matrise) {
-
-		StringBuilder sb = new StringBuilder ();
-		
-		for ( int [] element : matrise) {
-			for (int i : element ) {
-				sb.append(i).append(" "); 
-			}
-			sb.setLength(sb.length() - 1);
-			sb.append("\n"); 
-		}
-		return sb.toString(); 
-	}
-	
     public static String tilStreng(int[][] matrise) {
         String result = "";
         
